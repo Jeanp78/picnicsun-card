@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  gap: 20px;
+  background: url("../assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+.atropos {
+  width: 70%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h1 {
+  width: 100vw;
+  font-size: 3vh;
+  text-align: center;
+  padding: 13px 0;
+  background-color: rgb(0, 0, 0, 0.7);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+span {
+  position: relative;
+  display: block;
+}
+
+.picnic-sun::before {
+  content: "PICNIC SUN";
+  background: radial-gradient(
+    circle at -20.71% 50%,
+    #0086ff 0,
+    #0081ff 4.17%,
+    #007bff 8.33%,
+    #0074fc 12.5%,
+    #556cf5 16.67%,
+    #7c63ec 20.83%,
+    #985ae1 25%,
+    #ae4fd4 29.17%,
+    #c043c5 33.33%,
+    #cf36b5 37.5%,
+    #db29a5 41.67%,
+    #e31c93 45.83%,
+    #e91082 50%,
+    #ec0c71 54.17%,
+    #ed145f 58.33%,
+    #eb204e 62.5%,
+    #e72d3e 66.67%,
+    #e23a2d 70.83%,
+    #da4519 75%,
+    #d15000 79.17%,
+    #c75a00 83.33%,
+    #bb6200 87.5%,
+    #ae6a00 91.67%,
+    #a17200 95.83%,
+    #927800 100%
+  );
+  position: absolute;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  inset: 0;
+  animation: animation 1s ease-in-out infinite;
+}
